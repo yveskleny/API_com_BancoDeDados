@@ -1,0 +1,43 @@
+###
+POST http://localhost:5000/tarefas
+Content-Type: application/json
+
+{
+    "titulo": "Minha outra Tarefa",
+    "descricao": "Descrição da minha tarefa",
+    "concluida": true
+}
+###
+
+GET http://localhost:5000/tarefas
+Content-Type: application/json
+
+###
+
+GET http://localhost:5000/tarefas/1
+Content-Type: application/json
+
+###
+
+PUT http://localhost:5000/tarefas/2
+Content-Type: application/json
+
+{
+    "titulo": "Titulo tarefa alterado pelo metodo PUT",
+    "descricao": "Descrição da minha tarefa",
+    "concluida": true
+}
+
+###
+
+PATCH http://localhost:5000/tarefas/5
+Content-Type: application/json
+
+{
+    "descricao": "Modificando descrição da tarefa pelo Patch"
+}
+
+###
+
+DELETE http://localhost:5000/tarefas/5
+Content-Type: application/json
